@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.circle-1 {
+  animation: circle-1-keyframes 13s ease-in-out infinite alternate;
+}
+@keyframes circle-1-keyframes {
+  100% {
+    transform: translate(200px, 50px);
+  }
+}
+.circle-2 {
+  animation: circle-2-keyframes 8s ease-in-out infinite alternate;
+}
+@keyframes circle-2-keyframes {
+  100% {
+    transform: translate(300px, -25px);
+  }
+}
+.circle-3 {
+  animation: circle-3-keyframes 13s ease-in-out infinite alternate;
+}
+@keyframes circle-3-keyframes {
+  100% {
+    transform: translate(250px, 25px);
+  }
+}
